@@ -1,0 +1,8 @@
+# dotduffel entry — sourced after the host's own rc files, on every target.
+[ -f "$DUFFEL_DIR/aliases.sh" ] && . "$DUFFEL_DIR/aliases.sh"
+
+# Mark the prompt so you can tell a duffel'd shell from a bare one.
+case "${PS1:-}" in
+  *duffel*) ;;
+  *) PS1="(duffel) ${PS1:-\$ }" ;;
+esac

@@ -1,0 +1,15 @@
+{
+  "entry": "duffelrc",
+  "shell": "bash",
+  "budget_kb": 64,
+  "files": [
+    { "from": "duffelrc" },
+    { "from": "aliases.sh" },
+    { "from": "tools/*.sh", "to": "bin/" }
+  ],
+  "exclude": ["*.bak"],
+  "env": {
+    "DUFFEL": "1",
+    "EDITOR": "vi"
+  }
+}

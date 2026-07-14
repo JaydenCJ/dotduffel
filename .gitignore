@@ -1,0 +1,15 @@
+# build artifacts
+/dotduffel
+/dist/
+*.test
+
+# packed bundles from local experiments
+*.tgz
+
+# coverage
+coverage.out
+coverage.html
+
+# editor droppings
+*.swp
+.DS_Store
